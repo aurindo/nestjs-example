@@ -1,13 +1,13 @@
 import { Controller, Get, Response, HttpStatus, Post, Body, HttpException, Param, Delete, Put } from '@nestjs/common';
 import { Logger } from '@nestjs/common';
 
-import { ProductsService } from 'src/service/products/products.service';
+import { ProductsService } from '../../service/products/products.service';
 
-import { ValidationPipe } from 'src/pipe/validation.pipe';
+import { ValidationPipe } from '../../pipe/validation.pipe';
 
-import { Product } from 'src/model/product';
-import { ProductDTO } from 'src/dto/productDTO';
-import { ProductUpdateDTO } from 'src/dto/ProductUpdateDTO';
+import { Product } from '../../model/product';
+import { ProductDTO } from '../../dto/productDTO';
+import { ProductUpdateDTO } from '../../dto/ProductUpdateDTO';
 
 
 @Controller('api/products')

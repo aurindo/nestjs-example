@@ -2,9 +2,9 @@ import { flatten, Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository, UpdateResult } from 'typeorm';
 
-import { Product } from 'src/model/product';
-import { ProductDTO } from 'src/dto/productDTO';
-import { ProductUpdateDTO } from 'src/dto/productUpdateDTO';
+import { Product } from '../../model/product';
+import { ProductDTO } from '../../dto/productDTO';
+import { ProductUpdateDTO } from '../../dto/productUpdateDTO';
 
 
 @Injectable()
